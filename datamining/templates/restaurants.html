@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+
+{% block  content_2 %}
+   <script>
+        $(document).ready(function () {
+            $('#data').DataTable({
+                columns: [
+                    {searchable: true, orderable: false},
+                    {searchable: true, orderable: false},
+                    {orderable: true, searchable: false},
+                    {orderable: true, searchable: true},
+                    {searchable: false, orderable: false}
+                ],
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block content_1 %}
+
+<section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./static/rod-long-WC7LeX79iEU-unsplash.jpg" style="height:600px;" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="search-sec">
+    <div class="container">
+        <form action="{{ url_for('restaurants') }}" method="get" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row hehe">
+                        <div class="col-md-3 col-md-3 col-sm-12 p-0 s-div">
+                            <input type="text" class="form-control search-slt" name="cuisine" placeholder="What would you like to have?">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" name="city">
+                                <option>Choose City</option>
+                                <option>New York</option>
+                                <option>Chicago</option>
+                                <option>Bloomington</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" name="budget" placeholder="What's your budget?">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0 search">
+                            <button type="submit" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+<div class="hotels container">
+{% if no_results %}
+    <p class="container" style="text-align:center;">No restaurants found based on your search criteria.</p>
+{% else %}
+
+        {% for row in tablerows %}
+
+
+            <div class="wrapper">
+                  <h1>{{ row['rest_name'] }}</h1>
+                  <div class="image i1"></div>
+                <div class="details"><h1><em>Boracay Island</em></h1></div>
+                  <div><h2>{{ row['rest_city'] }}</h2></div>
+                  <div><button type="button" class="btn btn-danger">Wishlist</button></div>
+            </div>
+
+
+        {% endfor %}
+    </div>
+
+{% endif %}
+
+
+
+{% endblock content_1 %}

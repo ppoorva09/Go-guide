@@ -1,0 +1,361 @@
+.carousel-height{
+
+    height:600px;
+}
+
+.home-image{
+    height:600px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #4682b4;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.nav-item a{
+    color:white;
+    text-decoration:none;
+}
+
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+    margin-top:110px;
+    background-color:yellow;
+
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+    margin-left:50%;
+
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+    margin-left:50%;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+
+        margin-bottom:20px;
+background: linear-gradient(to right, #66ccff 0%, #ffffcc 71%);
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:200,400|Playfair+Display');
+
+.wrapper {
+  float: left;
+  width: 30%;
+  height:80%
+  min-width: 300px;
+  background-color: #f1f1f1;
+  margin: 1.5%;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.24);
+  text-align: center;
+
+}
+.wrapper>h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  color: #333;
+}
+.details {
+  width: 95%;
+  margin: 0 auto 2em;
+  padding-top: 10.5em;
+  padding-bottom: 1em;
+  background-color: #bcd4e6 ;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+  transition: all ease-in 0.15s;
+}
+
+.wrapper:hover .details{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 5px rgba(0,0,0,0.22);
+  transform: translate(0px, -2px) scale(1.01);
+}
+
+.details>h1 {
+  font-family: "Playfair Display";
+  font-size: 1em;
+}
+.details>h2 {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+.details>p {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.image{
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  height: 250px;
+  margin: 0 auto -10em;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  transition: all ease-in .15s;
+}
+.wrapper:hover .image{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translate(0px, -3px) scale(1.02);
+}
+
+.i1{
+    background-image: url(https://31.media.tumblr.com/9e9ba532a3174811c79e07bc4a61ebdc/tumblr_n92w6iRSjY1r5gmiko1_500.jpg);
+}
+.i2 {
+  background-image: url(http://www.asianventure.com/images/country/vietnam.jpg);
+}
+.i3 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/06/c7/ba/92/salah-satu-bangunan-di.jpg);
+  }
+
+@media screen and (max-width: 1000px) {
+  .wrapper{
+    width: 47%;
+  }
+}
+@media screen and(max-width:700px){
+  .wrapper{
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+@media screen and(max-width:700px){
+  .wrapper{
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+
+.hotels{
+margin-top:-120px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #fff;
+    width: 45%;
+	margin-top: 30%;
+	padding: 10px;
+	border-radius: 10px;
+    height: 350px;
+    margin:auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: small;
+    margin-bottom: 10px;
+    font-weight:400;
+}
+
+input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"]{
+    border-color: rgb(216, 216, 216);
+    border-style:double;
+    border-width: 1px;
+    border-radius: 3px;
+    border-radius: 07px;
+
+}
+
+
+input[type="password"]{
+    border-color: rgb(210, 210, 210);
+    border-style:double;
+    border-width: 1px;
+    border-radius: 3px;
+    border-radius: 07px;
+
+}
+
+input{
+    border-color: rgb(216, 216, 216);
+    border-style:double;
+    border-radius: 07px;
+    width: 180%;
+    height: 20%;
+
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+form{
+    margin-right: 38%;
+}
+
+label:nth-of-type(2) {
+    margin-top: 30px;
+
+}
+
+.login-body{
+    margin-top:5%;
+    background-color: #bcd4e6 ;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    background-size:cover;
+    padding:100px;
+}
+
+.register-body{
+  margin-top:3%;
+    background-color: #bcd4e6 ;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    background-size:cover;
+    padding:40px;
+}
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #fff;
+    width: 40%;
+
+	padding: 10px;
+	border-radius: 10px;
+    height: 520px;
+    margin:auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.form-text{
+    padding:10px;
+}
+
+.pressed{
+    margin-top:-20px;
+}
+
+.login-text{
+    margin-top:15px;
+}
+
+.hehe{
+    margin-left:23%;
+    width:100%;
+}
+
+.s-div input{
+margin-left:-10%;
+width:300px;
+}
