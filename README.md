@@ -1,4 +1,4 @@
-# Go-guide
+# Go-guide recommendation system
 
 Project Overview
 
